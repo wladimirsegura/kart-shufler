@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteio de Karts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kart Shuffler</h1>
+  <h2>Enter Name and Kart</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="kartNumber">Kart Number:</label>
+    <input type="text" id="kartNumber" name="kartNumber"><br>
+    <button type="button" onclick="addName()">Add Name</button>
+  </form> 
+  <h2>Entry list</h2>
+  <ul id="enteredNames"></ul>
+  <button type="button" onclick="randomizeKartNumbers()">Shuffle!!</button>
+  <h2>Sorted Names</h2>
+  <table id="sortedNames">
+    <tr>
+      <th>Name</th>
+      <th>Kart Number</th>
+    </tr>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
